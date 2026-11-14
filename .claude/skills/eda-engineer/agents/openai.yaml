@@ -1,0 +1,8 @@
+# Copyright (c) 2026 Yuchan (github.com/Yuchan-00). MIT License with Commons Clause (no selling) - see LICENSE.
+# Codex-only metadata (other hosts ignore this file; it is not part of the sold skill).
+# Source: https://developers.openai.com/codex/skills - `policy.allow_implicit_invocation` defaults to true;
+# it is written out so the intent (description-matched invocation, no $eda-engineer needed) is explicit.
+interface:
+  display_name: "EDA Engineer"
+policy:
+  allow_implicit_invocation: true

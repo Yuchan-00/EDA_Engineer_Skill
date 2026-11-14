@@ -1,0 +1,15 @@
+NOTICE — third-party material
+
+This project is licensed under the MIT License with the Commons Clause License
+Condition v1.0 (see LICENSE). The following MIT-licensed projects were studied
+as references for structure and method. No file of theirs is copied into this
+repository as of 2026-11-12; if verbatim text is ever copied, it will be listed
+here with its copyright line and the MIT text.
+
+- aklofas/kicad-happy — MIT License, Copyright (c) aklofas
+  https://github.com/aklofas/kicad-happy
+- fxp/ee-skills — MIT License, Copyright (c) fxp
+  https://github.com/fxp/ee-skills
+
+The Commons Clause License Condition v1.0 text is from https://commonsclause.com/
+(drafted by Heather Meeker).

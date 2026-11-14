@@ -1,0 +1,10 @@
+# left by trigger-test sessions (kept on disk by the user decision of 2026-11-12, never committed)
+projects/
+rc_lowpass_1k/
+astable_1k/
+firmware/
+.claude/settings.local.json
+__pycache__/
+*.pyc
+# working notes (plans, measurements, meetings, daily notes) stay local, outside version control
+notes/
