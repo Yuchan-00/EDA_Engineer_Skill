@@ -7,7 +7,6 @@
 [![License: MIT + Commons Clause](https://img.shields.io/badge/license-MIT%20%2B%20Commons%20Clause-blue)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-black)](.agents/skills/eda-engineer/SKILL.md)
 [![Hosts](https://img.shields.io/badge/hosts-Claude%20Code%20%7C%20Codex-555)](#지원-호스트)
-[![Status](https://img.shields.io/badge/status-first%20draft-orange)](#현재-상태)
 
 [스킬](.agents/skills/eda-engineer/SKILL.md) / [파이프라인](.agents/skills/eda-engineer/references/pipeline.md) / [답변 키](.agents/skills/eda-engineer/references/answers.md) / [English](README.md)
 
@@ -60,24 +59,6 @@ python <skill>/scripts/deliver.py ./divider --lang ko                       # PD
 | Claude Code | `.claude/skills/eda-engineer/` | `.agents` 폴더와 바이트 동일한 사본 |
 | Codex | `.agents/skills/eda-engineer/` | Codex 전용 메타데이터 `agents/openai.yaml` |
 | 그 밖의 Agent Skills 호스트 | `.agents/skills/eda-engineer/` | 설명문으로 `SKILL.md`를 불러옴 |
-
-발동 시험(2026-11): Claude Code 양성 10/10, 음성 5/5; Codex 양성 10/10, 음성 4/5.
-
-## 현재 상태
-
-| 영역 | 상태 (2026-11-15) |
-|---|---|
-| 스킬 | 초안, 참고 코드와 두 번 대조 |
-| 결과 보고서와 zip | 동작 |
-| 표준 부품값(E 계열) | 템플릿 6종과 설계 파일; `lc_lowpass`, `astable`, 무전기 계열 남음 |
-| 미세 피치 탈출(0.5 mm QFP) | 비아 팬아웃(`routing.maze` 0.8)으로 LQFP-100 패드 99개 모두 탈출 |
-| 다층 배선(4–12층, 블라인드·베리드·마이크로 비아) | 참고 시스템 로컬 브랜치에 구현: 비아 종류, 6–12층 적층, N층 배선기, 층 상승 2 → 4 → 6 → 8 → 10 → 12; STM32 시험 보드는 6층에서 91개 넷 모두 배선 |
-| PCB 재료(FR-4, Rogers RO4350B, 폴리이미드 플렉스, 알루미늄 IMS) | 장치 요구에서 제안, 수치는 제조사 데이터시트, 사용자가 확인 |
-| LLM 공급자(Claude Code, Codex, OpenAI 호환, 교차 확인) | CLI는 구독 로그인에서만, 예산을 주지 않으면 API 요금 없음 |
-| STM32F407 디스플레이 시험 보드 | 6층, 91개 넷 모두 배선; KiCad DRC 오류 0 / 미연결 0, ERC 0 / 0, 시뮬레이션 통과 |
-| 무전기 송수신기(부품 441개) | DRC FAIL(오류 67건), 원인 미조사 |
-
-참고 시스템의 개선은 그 레포의 로컬 브랜치 `work/ead-skill`에 있고 아직 업스트림에 올리지 않았습니다.
 
 ## 문서
 

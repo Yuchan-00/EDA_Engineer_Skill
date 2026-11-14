@@ -7,7 +7,6 @@
 [![License: MIT + Commons Clause](https://img.shields.io/badge/license-MIT%20%2B%20Commons%20Clause-blue)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-black)](.agents/skills/eda-engineer/SKILL.md)
 [![Hosts](https://img.shields.io/badge/hosts-Claude%20Code%20%7C%20Codex-555)](#supported-hosts)
-[![Status](https://img.shields.io/badge/status-first%20draft-orange)](#status)
 
 [Skill](.agents/skills/eda-engineer/SKILL.md) / [Pipeline](.agents/skills/eda-engineer/references/pipeline.md) / [Answers](.agents/skills/eda-engineer/references/answers.md) / [한국어](README.ko.md)
 
@@ -61,24 +60,6 @@ python <skill>/scripts/deliver.py ./divider --lang en                       # tw
 | Claude Code | `.claude/skills/eda-engineer/` | byte-identical copy of the `.agents` folder |
 | Codex | `.agents/skills/eda-engineer/` | `agents/openai.yaml` for Codex-only metadata |
 | Other Agent Skills loaders | `.agents/skills/eda-engineer/` | loads `SKILL.md` by its description |
-
-Trigger tests (2026-11): Claude Code 10/10 positive, 5/5 negative; Codex 10/10 positive, 4/5 negative.
-
-## Status
-
-| Area | State (2026-11-15) |
-|---|---|
-| Skill | first draft, reviewed twice against the reference code |
-| Hand-over reports and zip | working |
-| Standard part values (E-series) | six templates and design files; `lc_lowpass`, `astable`, radio family open |
-| Fine-pitch escape (0.5 mm QFP) | via fan-out (`routing.maze` 0.8) escapes all 99 pads of an LQFP-100 |
-| Multilayer routing (4-12 layers, blind / buried / micro vias) | in the reference system's local branch: typed vias, 6-12 layer stacks, N-layer router, layer escalation 2 -> 4 -> 6 -> 8 -> 10 -> 12; the STM32 test board routes all 91 nets on 6 layers |
-| PCB materials (FR-4, Rogers RO4350B, polyimide flex, aluminium IMS) | chosen from the device's needs, numbers from manufacturer datasheets, confirmed by the user |
-| LLM providers (Claude Code, Codex, OpenAI-compatible, cross-check) | subscription logins only for the CLIs, no per-call API charges without a granted budget |
-| STM32F407 display test board | 6 layers, 91 of 91 nets routed; KiCad DRC 0 errors / 0 unconnected, ERC 0 / 0, simulation pass |
-| Radio transceiver (441 parts) | DRC FAIL (67 errors), not investigated yet |
-
-The reference system's improvements live on its local branch `work/ead-skill` and are not upstream yet.
 
 ## Documentation
 
